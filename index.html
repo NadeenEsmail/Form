@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <!-- it is the container / card that includes the left part"image" and the right part" the form" -->
     <div class="container">
         <div class="thebox">
-            <div class="left"></div>
+          <!-- the left part includes an image -->
+            <div class="left">
+                 <img src="https://c4.wallpaperflare.com/wallpaper/820/54/533/beeple-digital-art-3d-square-wallpaper-preview.jpg">
+            </div>
+          <!-- the right part includes the form which includes a personal info -->
             <div class="right">
     <form action="results.html" method="get" enctype="multipart/form-data">
+      <!-- in this div the user should enter his name and there is also place holder to guide him what he should write in this field -->
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="username" required>
@@ -29,6 +35,7 @@
             <label for="date">Birthdate</label>
             <input type="date" name="date" id="date" min="2019-06-10">
         </div>
+      <!-- here there is a checkbox which the user can choose more than one choice from the favourite food -->
         <div>
             Favourite Food
             <div> 
@@ -40,6 +47,7 @@
                 <input type="checkbox" name="apple" id="apple">
             </div>
         </div>
+      <!-- here there is a radio which the user must choose one choice only -->
         <div>
             Gender
             <div>
@@ -58,11 +66,13 @@
                 <option label="Red" value="Red">Red</option>
             </select>
         </div>
+      <!-- there is a textarea where the user can write what he wants in this field -->
         <div>
             <label for="bio">Bio</label>
             <textarea id="bio" name="bio"></textarea>
         </div>
         <input type="hidden" name="hidden" value="hi">
+      <!-- here the user could upload a file -->
         <div>
             <label for="file">File</label>
             <input id="file" type="file" name="file">
@@ -76,6 +86,7 @@
             <input type="password" name="password" required>
         </label>
         </div>
+      <!-- these are buttons which the user can submit his info or reset it -->
         <button type="reset" class="btn">Reset</button>
         <button type="submit" class="btn">Submit</button>
     </form>
